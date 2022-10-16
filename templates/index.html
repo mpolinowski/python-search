@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Elastic Flask</title>
+  </head>
+  <body>
+    <header>
+      <h1>Elasticsearch Client</h1>
+    </header>
+    <main>
+      <p>Enter a search request:</p>
+      <form method="POST">
+        <div><p>Elasticsearch URL : </p><input placeholder="Elasticsearch URL" value="localhost:9200" name="elastic_url"></input></div>
+        <div><p>Elasticsearch Index : </p><input placeholder="Elasticsearch Index" value="dev_2022_08_20" name="elastic_index"></input></div>
+        <div><p>Search Query : </p><input placeholder="Search Query" name="query"></input></div>
+        <br/>
+        <button>Ask Elastic</button>
+      </form>
+    </main>
+  </body>
+</html>

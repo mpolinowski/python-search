@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Elastic Flask</title>
+  </head>
+  <body>
+    <header>
+      <h1>Elasticsearch Client</h1>
+    </header>
+    <main>
+      <p>Enter a search request:</p>
+      <form method="POST">
+        <div><input value="{{query}}" name="query"></input></div>
+        <h3>Search Results</h3>
+        <ol>
+          {%for i in range(0, len)%}
+              <li>{{result[i]['_source']['title']}}</li>
+          {%endfor%}
+        </ol>
+      </form>
+    </main>
+  </body>
+</html>
